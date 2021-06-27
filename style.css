@@ -1,0 +1,146 @@
+html,
+body,
+main {
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+main {
+  background-color: white;
+  width: 100%;
+  height: 95%;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  height: auto;
+  width: auto;
+}
+li {
+  display: inline-block;
+  position: absolute;
+  background-color: blueviolet;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #0d1038;
+  color: white;
+  text-align: center;
+  height: 5%;
+}
+.parent-wrapper {
+  height: auto;
+  width: auto;
+}
+#drop-image {
+  width: 100%;
+  height: 100%;
+  top: 100px;
+  position: absolute;
+}
+#top-right {
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  background-image: url("https://flagcdn.com/w40/th.png");
+}
+#top-left {
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background-image: url("https://flagcdn.com/w40/cn.png");
+}
+#bottom-right {
+  bottom: 6%;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  background-image: url("https://flagcdn.com/w40/jp.png");
+}
+#bottom-left {
+  bottom: 6%;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background-image: url("https://flagcdn.com/w40/kr.png");
+}
+#picture-start {
+  display: block;
+  position: absolute;
+  top: 0;
+  transform: translateX(50%);
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  right: 50%;
+  width: 200px;
+  min-height: 200px;
+  background: transparent;
+}
+
+.child {
+  width: 3rem;
+  height: 1.5rem;
+  background-color: brown;
+  border: 1px solid gray;
+}
+
+.flex {
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+.nationality-text {
+  text-align: center;
+  font-size: larger;
+  font-weight: 600;
+  padding: 4.5rem 3rem 1rem 3.5rem;
+}
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 20%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

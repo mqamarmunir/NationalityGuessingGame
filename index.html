@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Nationality Guessing Game</title>
+    <script src="jquery.min.js" type="text/javascript"></script>
+    <script src="utility.js" type="text/javascript"></script>
+    <script src="constants.js" type="text/javascript"></script>
+    <script src="drag.js" type="text/javascript"></script>
+    <script src="player.js" type="text/javascript"></script>
+    <script src="movingImage.js" type="text/javascript"></script>
+    <script src="main.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <main>
+      <ul>
+        <li id="top-right" class="parent-wrapper">
+          <div class="flex nationality-text">Thai</div>
+        </li>
+        <li id="top-left" class="parent-wrapper">
+          <div class="flex nationality-text">Chinese</div>
+        </li>
+        <li id="picture-start" class="parent-wrapper">
+          <div class="flex picture-div">
+            <img id="drop-image" src="" />
+          </div>
+        </li>
+        <li id="bottom-right" class="parent-wrapper">
+          <div class="flex nationality-text">Japanese</div>
+        </li>
+        <li id="bottom-left" class="parent-wrapper">
+          <div class="flex nationality-text">Korean</div>
+        </li>
+      </ul>
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Total score:<strong><span id="modal-result"></span></strong></p>
+          <p><button id='play-again'>Play again</button></p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <strong>Total Score: <span id="result">0</span></strong>
+      </div>
+    </footer>
+  </body>
+</html>
