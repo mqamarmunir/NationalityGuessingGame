@@ -1,4 +1,4 @@
-var sleep = function sleep(ms) {
+var sleep = function(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
   };
   var updateDisplayedResult = function (result) {
